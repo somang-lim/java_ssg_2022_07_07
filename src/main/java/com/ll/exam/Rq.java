@@ -10,6 +10,11 @@ public class Rq {
 
     public int getIntParam(String paramName, int defaultValue) {
         String[] urlBits = url.split("\\?", 2);
+
+        if(urlBits.length == 1) {
+            return defaultValue;
+        }
+
         urlBits = urlBits[1].split("&");
 
         for(String urlBit : urlBits) {
