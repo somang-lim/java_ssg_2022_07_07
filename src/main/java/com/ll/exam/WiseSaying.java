@@ -16,8 +16,8 @@ public class WiseSaying {
     public String toString() {
         return "WiseSaying{" +
                 "id=" + id +
-                ", content='" + content + "\'" +
-                ", author='" + author + "\'" +
+                ", content='" + content + "\\'" +
+                ", author='" + author + "\\'" +
                 "}";
     }
 }
